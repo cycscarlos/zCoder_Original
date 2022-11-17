@@ -1,0 +1,260 @@
+/*: Desktop styles  */
+.topheader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: var(--theme-color);
+  box-shadow: 0 4px 5px var(--navbar-shadow-color);
+}
+
+.darkShadow {
+  box-shadow: 0 4px 5px black;
+}
+
+.topnav {
+  /** Reducir el tamaño del viewport y centrar los elementos dentro del bloque */
+  position: relative;
+  max-width: 61.3em;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6em;
+}
+
+/*_ Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: var(--logo-color);
+  font-family: var(--font-logo);
+}
+
+.logo img {
+  border-radius: 50%;
+}
+
+.logotype {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 1em;
+  font-size: 1.1em;
+  color: var(--logotype-color);
+  font-weight: bold;
+}
+
+.logo span {
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: center;
+}
+
+/** Darkmode styles  */
+.moon {
+  width: 1.8em;
+  height: 1.9em;
+  margin-right: 2.5em;
+  align-self: center;
+}
+
+#icon {
+  cursor: pointer;
+}
+
+/*: Botón Ingles/Español para PC & Tablets in landscape mode */
+.lenguaje {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lenguaje input[type="checkbox"] {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  -webkit-appearance: none;
+  background: #c6c6c6;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+.lenguaje input:checked[type="checkbox"] {
+  background: #03a9f4;
+}
+.lenguaje input[type="checkbox"]:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+.lenguaje input:checked[type="checkbox"]:before {
+  left: 20px;
+}
+.lenguaje span {
+  margin: 0 0.5rem;
+  font-size: var(--step--2);
+  color: var(--logotype-color);
+}
+
+/*_ Menu de navegación */
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 0 0.9em;
+}
+
+.menu a {
+  color: var(--text-color);
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 1.4;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.menu a::after {
+  content: "";
+  background-color: var(--logotype-color);
+  position: absolute;
+  left: 0;
+  /** Para separar el rectangulo amarillo del texto, se usa el parametro "calc", ya que CSS no soporta operaciones matemáticas directas (ejemplo: 100% + 6px) */
+  top: calc(100% + 6px);
+  width: 100%;
+  height: 4px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+/** Por defecto apagamos el rectangulo de todos los "li" (opacity:0;), excepto el "li" principal y cuando otro "li" sea seleccionado, prendemos su rectangulo (opacity:0.8); */
+
+.menu a.selected::after,
+.menu a:hover::after {
+  opacity: 0.8;
+}
+
+.menu a:hover {
+  color: var(--primary-color);
+}
+
+/** Apagamos los botones, para prenderlos en la Media Queries  */
+
+.open-menu,
+.close-menu {
+  display: none;
+}
+
+/*: iPad portrait styles  */
+@media (max-width: 768px) {
+  .logo span {
+    font-size: 1em; 
+  }
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    background-color: var(--menu-mobile-background-color);
+    height: 100%;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s;
+  }
+
+  .menu li {
+    padding: 0;
+  }
+
+  .menu a {
+    color: var(--white-color);
+    line-height: 3.8em;
+    font-size: 1.3em;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  /** Reubicación del icono hamburguesa */
+  .open-menu {
+    position: absolute;
+    top: 1.8em;
+    right: 5em;
+    border: 1px solid var(--hamburguer-color);
+  }
+
+  .close-menu {
+    align-self: flex-end;
+    padding: 1.6em 1em;
+  }
+
+  /** Un programa de JavaScript (botonApp), adjuntará o quitará la clase "menu-opened" al tag UL con la clase "menu"; cuando detecte (addEventListener) un "click" sobre el icono "X" (clase close-menu) o sobre el icono hamburguesa (clase open-menu). */
+
+  .menu_opened {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  /** Elimina el borde que se forma alrrededor de los iconos "X" y "hamburguesa" cuando el usuario solo se posiciona encima de ellos, sin llegar a darles "click" */
+
+  .open-menu:focus:not(:focus-visible),
+  .close-menu:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  .menu a::after {
+    content: none;
+  }
+
+  .menu a:hover,
+  .menu a.selected {
+    color: var(--secondary-color);
+  }
+  .lenguaje {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+}
+
+/*: Smartphones styles */
+@media screen and (max-width: 500px) {
+  .lenguaje {
+    display: none;
+  }
+  .lenguaje.appears {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .logo span {
+    font-size: 0.6em;
+  }
+}
