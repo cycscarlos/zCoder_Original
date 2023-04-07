@@ -43,7 +43,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .letter .letter-details {
@@ -134,7 +134,7 @@
   .letter:hover {
     transform: perspective(2000px) rotate(0deg);
   }
-    .letter .imgBox img {
+  .letter .imgBox img {
     width: 90%;
     position: absolute;
     top: 0;
