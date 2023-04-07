@@ -2,6 +2,7 @@
 .profile {
   text-align: justify;
   caret-color: transparent;
+  outline:1px solid red;
 }
 
 .profile-info {
@@ -47,7 +48,8 @@
   align-items: center;
 
   text-align: center;
-  margin-top: 0.9em;
+  /* margin-top: 0.9em; */
+  margin: 3em 0 0 0;
 }
 
 .btnBx button span {

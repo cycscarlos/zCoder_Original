@@ -1,6 +1,7 @@
 /*: Desktop + iPads landscape (768px) */
 .letter-container {
-  margin: 2.5em auto;
+  /* margin: 2.5em auto; */
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   font-weight: 300;
