@@ -1,6 +1,7 @@
 .coverLetter {
-  outline: 1px solid red;
-  padding-top: 4.4em; /* 4.375em = 70px */
+  outline: 1px solid green;
+  padding-top: 6em;
+  padding-bottom: 6em;
 }
 /*: Desktop + iPads landscape (768px) */
 .letter-container {
