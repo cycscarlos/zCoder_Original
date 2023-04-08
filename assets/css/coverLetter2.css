@@ -1,3 +1,6 @@
+.coverLetter {
+  outline: 1px solid red;
+}
 /*: Desktop + iPads landscape (768px) */
 .letter-container {
   /* margin: 2.5em auto; */
