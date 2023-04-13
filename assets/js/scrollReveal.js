@@ -15,7 +15,7 @@ sr.reveal(`.profile-details, .skills`, {
   interval: 100,
 });
 
-sr.reveal(`.profile-img-section, .otherSkills`, {
-  origin: "right",
-  interval: 100,
-});
+// sr.reveal(`.profile-details-sec`, {
+//   origin: "right",
+//   interval: 0,
+// });
