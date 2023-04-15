@@ -12,7 +12,7 @@ icon.onclick = function () {
   document.body.classList.toggle("dark-theme");
 
   if (document.body.classList.contains("dark-theme")) {
-    icon.src = "././assets/img/sol.png";
+    icon.src = "./../assets/img/sol.png";
     // darktop.src = "./img/wave2.svg";
     // darkBottom.src = "./img/wave2.svg";
 
@@ -22,7 +22,7 @@ icon.onclick = function () {
     // networking.classList.toggle("darkSkill");
     // security.classList.toggle("darkSkill");
   } else {
-    icon.src = "././assets/img/moon.png";
+    icon.src = "./../assets/img/moon.png";
     // darktop.src = "./img/wave.svg";
     // darkbottom.src = "./img/wave.svg";
 

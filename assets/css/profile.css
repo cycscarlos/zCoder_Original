@@ -1,6 +1,7 @@
 /* General styles */
 .color-cargo {
   color: var(--cargo-color);
+  font-weight: 500;
 }
 /*: Smartphones styles */
 .profile {
