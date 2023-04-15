@@ -207,7 +207,7 @@
     position: absolute;
     top: 1.8em;
     right: 5em;
-    border: 1px solid var(--hamburguer-color);
+    /* border: 1px solid var(--hamburguer-color); Modificado el 15-4-2023 */
   }
 
   .close-menu {
