@@ -62,6 +62,7 @@
   --coverLetter-color: #2a2a2a;
   --coverLetter-bg-color: #f5f5dc;
   --logotype-color: #9d8d6c;
+  --cargo-color: rgb(230, 171, 230);
 }
 
 html {

@@ -1,3 +1,7 @@
+/* General styles */
+.color-cargo {
+  color: var(--cargo-color);
+}
 /*: Smartphones styles */
 .profile {
   text-align: justify;
