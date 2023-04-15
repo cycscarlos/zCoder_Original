@@ -36,22 +36,17 @@
     <link rel="canonical" href="https://zCoder.netlify.app" />
 
     <!-- Meta Datos & links de PWA -->
-    <!--* Color barra del navegador en el movil (PWA) -->
+    <!-- Color barra del navegador en el movil (PWA) -->
     <meta name="theme-color" content="#9d8d6c" />
-    <!--* website optimizado para moviles  -->
+    <!-- website optimizado para moviles  -->
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
-    <!--* Requerido por Apple para iPhones y tabletas -->
+    <!-- Requerido por Apple para iPhones y tabletas -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta
       name="apple-mobile-web-app-status-bar-style"
       content="black-translucent"
     />
-    <!--: PWA des-Activado! -->
-    <link rel="apple-touch-icon" href="../img/iconWeb_512.png" />
-    <link rel="apple-touch-startup-image" href="../img/logoFoto.jpg" />
-    <!-- <link rel="manifest" href="./manifest.json" /> -->
-
     <link
       rel="shortcut icon"
       href="./../assets/img/favicon.png"
@@ -61,13 +56,8 @@
     <link rel="stylesheet" href="./../assets/css/normalize.css" />
     <link rel="stylesheet" href="./../assets/css/main.css" />
     <link rel="stylesheet" href="./../assets/css/navbar.css" />
-    <link rel="stylesheet" href="./../assets/css/profile2.css" />
-    <link rel="stylesheet" href="./../assets/css/coverLetter2.css" />
-    <link rel="stylesheet" href="./../assets/css/experiences2.css" />
-    <link rel="stylesheet" href="./../assets/css/skills.css" />
-    <link rel="stylesheet" href="./../assets/css/otherSkills.css" />
+    <link rel="stylesheet" href="./../assets/css/profile.css" />
     <link rel="stylesheet" href="./../assets/css/contact.css" />
-    <link rel="stylesheet" href="./../assets/css/pwaModal.css" />
   </head>
   <body>
     <!-- Header -->
@@ -120,34 +110,44 @@
     <div class="horizontal-padding vertical-padding">
       <section class="profile" id="profile">
         <div class="profile-info">
-          <h1 class="profile-title">
-            Hola!
-            <!-- <div class="name">zCoder!</div> -->
-          </h1>
+          <h1 class="profile-title">Hola!</h1>
           <p class="profile-details">
-            Ingeniero de software de profesión, con un titulo en ingeniería
-            electrónica. a través de mi carrera profesional, he trabajado como
-            programador de sistemas operativos para dos bancos; como director de
-            software de una empresa norteamericana de desarrollo de software, y
-            como ingeniero de proyectos y consultor en más de cuarenta (40)
-            coporaciones nacionales y extranjeras
+            Soy ingeniero de software de profesión, con formación académica
+            y una licenciatura en ingeniería electrónica. A lo largo de mi
+            carrera, he trabajado como programador de sistemas para dos
+            importantes bancos, también fui director de software de una empresa
+            de desarrollo de software norteamericana con presencia a nivel
+            mundial, y he tenido una exitosa carrera como ingeniero de
+            proyectos, fundamentalmente en las áreas de telecomunicaciones e
+            implementación de sistemas de seguridad electrónica. Todo ello, me
+            ha llevado a ser contratado como consultor o experto por más de
+            cuarenta (40) corporaciones nacionales y extranjeras
             <small
               >(algunas de la talla de PDVSA, Cargill de Venezuela, CANTV, CVG,
               Metro de Caracas, Registro Nacional de Costa Rica (en San José,
               Costa Rica), Banco Invercredito (en Bogotá, Colombia), así como
-              también para trece (13) bancos en Venezuela)</small
-            >. Mi trabajó ha consistido en desarrollar e implementar proyectos
-            tecnológicos de alta complejidad técnica. Paralelamente y en el día
-            a día, complemento mi trabajo de campo con mi otra pasión, la
-            programación de software, en la que continuamente me estoy formando
-            y trabajando en la mayoría de las tecnologías que conforman su
-            ecosistema
-            <small
-              >(con énfasis en HTML, CSS, Python, NodeJS, Express, Javascript,
-              ReactJS, y muchas otras herramientas)</small
-            >, desarrollando software o apps para smartphones, PCs, servidores
-            de escritorio y en la nube. Mis avances en esta área puede ser
-            vistos en el siguiente enlance...
+              también por trece (13) bancos en Venezuela)</small
+            >
+            <span class="profile-sec-btn">
+              <a
+                style="cursor: pointer"
+                onClick="mostrar_DivOculto('profile-details-sec')"
+                title=""
+                >...Leer más</a
+              ></span
+            >
+          </p>
+
+          <p id="profile-details-sec" class="profile-details-sec">
+            En paralelo a las actividades antes descritas, siento muchísima
+            pasión por la programación de software manteniendome en constante
+            formación y actualización en las últimas tecnologías que conforman
+            el ecosistema del desarrollo de software web (centrándome en
+            tecnologías como: HTML, CSS, Python, NodeJS, Express, Javascript,
+            ReactJS...y muchas otras más). A diario trabajo en el desarrollo de
+            software y aplicaciones para smartphones, computadoras de
+            escritorio, sitios web y servidores en la nube. Mi progreso como
+            desarrollador web se puede ver en el siguiente enlace...
             <span>
               <a
                 href="https://cycscarlos.github.io/my-portfolio"
@@ -157,16 +157,7 @@
               >
             </span>
           </p>
-          <div class="btnBx">
-            <!-- <button
-              type="button"
-              class="profile-btn"
-              onclick="window.open('./../assets/pdf/careerSynthesis.pdf');"
-            >
-              Descargar CV
-              <span>(inglés)</span>
-            </button> -->
-
+          <!-- <div class="btnBx">
             <a
               style="cursor: pointer"
               onClick="mostrar_DivOculto('coverLetter')"
@@ -175,24 +166,13 @@
               href="#coverLetter"
               >Carta de Presentación</a
             >
-          </div>
+          </div> -->
         </div>
-        <!-- <div class="profile-img-section">
-          <img
-            width="288"
-            height="384"
-            class="profile-img"
-            src="./../assets/img/mainFoto.png"
-            alt="software engineer"
-          />
-
-          <div class="profile-img-line"></div>
-        </div> -->
       </section>
     </div>
 
     <!-- Coverletter -->
-    <section id="coverLetter" class="coverLetter mobile_coverLetter">
+    <!-- <section id="coverLetter" class="coverLetter mobile_coverLetter">
       <div class="letter-container mobile_letter-container">
         <div class="letter mobile_letter">
           <div class="imgBox">
@@ -311,515 +291,6 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Experiences -->
-    <!-- <section class="experiences" id="experiences">
-      <img
-        class="wave"
-        id="darkTop"
-        src="./../assets/img/wave.svg"
-        alt="división"
-      />
-      <div class="experiences-body">
-        <h2 class="experiences-title">EXPERIENCIA DE TRABAJO</h2>
-        <div class="experiences-grid">
-          <div class="empty"></div>
-          <div class="line"></div>
-          <div class="experience">
-            <div class="experience-date">2020-2021</div>
-            <div class="experience-company">Autónomo</div>
-            <div class="experience-position">Consultor Senior</div>
-            <div class="experience-description">
-              <ul>
-                <li>
-                  Consultoria e integración de proyectos<br />
-                  <small>
-                    Proveo servicios de consultoría en las siguientes
-                    áreas:</small
-                  >
-                  <ul class="sublist">
-                    <li>Sistemas electrónicos de seguridad y automatización</li>
-                    <li>
-                      Sistemas de telecomunicaciones y redes por microondas
-                    </li>
-                    <li>
-                      System Programming para tecnologiás Mainframe de IBM
-                    </li>
-                  </ul>
-                </li>
-
-                <li>
-                  Desarrollo de software<br />
-                  <small
-                    >Proveo servicios de diseño y desarrollo de websites, tanto
-                    para plataformas de Servidores y Base de Datos como para
-                    dispositivos Moviles</small
-                  >
-                  <ul class="sublist">
-                    <li>
-                      Backend: Python, NodeJS, Express, MySQL, MongoDB,
-                      Electron, APIs, etc.
-                    </li>
-                    <li>
-                      Front-end: HTML, CSS, Javascript, React, React Native,
-                      Figma, etc.
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="experience experience_left">
-            <div class="experience-date">2012-2020</div>
-            <div class="experience-company">
-              CYCS Ingeniería e Instalaciones
-            </div>
-            <div class="experience-position">
-              Co-fundador y Especialista en Proyectos Senior
-            </div>
-            <div class="experience-description">
-              <ul class="experience_right">
-                <li>
-                  Encargado de desarrollar las siguientes áreas de consultoría
-                  gerencial:
-                  <ul class="sublist">
-                    <li>Sistemas electrónicos de seguridad</li>
-                    <li>
-                      Sistemas de Telecomunicaciones
-                      <small> (Redes Microondas)</small>
-                    </li>
-                  </ul>
-                </li>
-
-               
-                <div class="container-btn">
-                  <a
-                    href="#lista-proyectos-1"
-                    style="--clr: #1e9bff"
-                    class="btn1"
-                    ><span>view PROJECTS</span><i></i
-                  ></a>
-                </div>
-
-                <li class="lista-proyectos-1">
-                  <div class="xBox">
-                    <a href="#container-btn" class="close1">X</a>
-                  </div>
-
-                  <small><strong>Clientes - duración - proyectos</strong></small
-                  ><br />
-
-                  <small>
-                    <br />1. <span>Sisven de Venezuela</span> - 1 año<br />
-                    Líder de equipo. Instalación y mantenimiento de +1000
-                    cámaras de CCTV.<br />
-                    2. <span>Connectix Distribuidora</span> - 2 años<br />
-                    Líder de equipo. Desarrollo de una gran cantidad de
-                    proyectos de instalación y mantenimiento de vídeo cámaras de
-                    seguridad y control de acceso en sus clientes. <br />3.
-                    <span>Consultores Cibernéticos</span> - 3 años<br />
-                    Lider de equipo. Desarrollo de muchos proyectos de
-                    instalación y mantenimiento de vídeo cámaras de seguridad y
-                    sistemas de control de acceso en sus clientes. <br />4.
-                    <span> ABA torre (edificio de oficinas) </span> - 7 años<br />
-                    Ingeniero de proyecto. Diseño e instalación de los sistemas
-                    de vigilancia, Control de Acceso, Cerco Eléctrico perimetral
-                    y Alarmas contra intrusos. <br />5.
-                    <span> Edificio residencial Los Tulipanes </span>- 6
-                    meses<br />
-                    Lider de equipo. Instalación y mantenimiento de 8 cámaras de
-                    vídeo seguridad. Tecnología: Avtech.<br />6.
-                    <span>MINCI</span> - 1 año<br />
-                    Ingeniero de proyecto. Instalación de 256 cámaras de vídeo
-                    seguridad. Tecnología: IP Hikvision. <br />7.
-                    <span>FITVEN 2013</span> - 2 meses<br />
-                    Ingeniero de proyectos. Instalación de 48 cámaras de vídeo
-                    vigilancia, más la implementación de una red de
-                    telecomunicaciones por microondas para la transmisión del
-                    vídeo. Tecnología: Airlive.
-                    <br />8. <span>DESCA</span> - 1 año<br />
-                    Ingeniero de proyectos. Instalación de sistemas de
-                    vigilancia y Control de Accesos en todos sus clientes.
-                    <br />9. <span>CARGILL de Venezuela (USA)</span> - 1 año<br />
-                    Ingeniero de proyectos. Instalación, a nivel nacional, de un
-                    complejo sistema de control de acceso, operando
-                    independientemente en cada una de sus dieciséis (16)
-                    fábricas, e interconectandolos todos a la sede principal.
-                    Tecnología: Chiyu.
-                    <br />10. <span>Industrias CEGASA</span> - 3 años<br />
-                    Ingeniero de proyecto. Instalación de un complejo sistema de
-                    vídeo vigilancia IP, más la implementación de una red de
-                    telecomunicaciones para la transmisión por microondas del
-                    vídeo. Tecnologías: Airlive y Chiyu.
-                    <br />11.
-                    <span>Torre TORREON (edificio de oficinas)</span> - 2
-                    años<br />
-                    Líder de equipo. Instalación y mantenimiento de 32 cámaras
-                    CCTV e implementación del Cerco Eléctrico perimetral de la
-                    torre.
-                  </small>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="line"></div>
-          <div class="empty"></div>
-          <div class="empty"></div>
-          <div class="line"></div>
-
-          <div class="experience">
-            <div class="experience-date">1991-2011</div>
-            <div class="experience-company">CYCS Computing Specialists</div>
-            <div class="experience-position">
-              Co-fundador y Especialista en Proyectos Senior
-            </div>
-            <div class="experience-description">
-              <ul>
-                <li>
-                  Encargado de desarrollar las siguientes gerencias de servicios
-                  y consultoría especializada:
-
-                  <ul class="sublist">
-                    <li>
-                      System programming para tecnologías Mainframe IBM; y con
-                      especial enfasís para aquellos clientes con tecnologías
-                      "heredadas"
-                      <small>(legacy)</small>, de mainframe s/370 y/o s/390.
-                    </li>
-                    <li>
-                      Sistemas de telecomunicaciones y redes por Microondas
-                    </li>
-                  </ul>
-                </li>
-
-             
-                <div class="container-btn">
-                  <a
-                    href="#lista-proyectos-2"
-                    style="--clr: #1e9bff"
-                    class="btn2"
-                    ><span>view PROJECTS</span><i></i
-                  ></a>
-                </div>
-
-                <li class="lista-proyectos-2">
-                  <div class="xBox">
-                    <a href="#container-btn" class="close2">X</a>
-                  </div>
-
-                  <small><strong>Clientes - duración - proyectos</strong></small
-                  ><br /><br />
-
-                  <small>
-                    1. <span>Instituto Vialidad Estado Vargas</span> - 1 año<br />
-                    Implementación de un sistema de telefonía basado en una
-                    plataforma inalámbrica para proporcionar acceso a la PSTN
-                    <br />2. <span>Banco Hipotecario Latinoamericana</span> - 6
-                    meses <br />Diseño e instalación de una red de
-                    telecomunicaciones por Microondas para proveer acceso a
-                    Internet a sus sucursales bancarias <br />3.
-                    <span>Guardia Nacional de Venezuela</span> - 2 años<br />
-                    Reingeniería de la plataforma de telecomunicaciones TETRA.
-                    <br />4. <span>Apostadero Naval de Turiamo</span> - 6
-                    meses<br />
-                    Diseño de un enlace inalámbrico IP para conectar dos bases
-                    militares y compartir el acceso a Internet de banda ancha
-                    entre ellas <br />5.
-                    <span>Policía Municipal Estado Vargas</span> - 1 año<br />
-                    Implementación de un sistema de telefonía basado en una
-                    plataforma inalámbrica para proporcionar acceso a la PSTN<br />
-                    6. <span>DIEX</span> - 4 años <br />Diseño de la plataforma
-                    de telecomunicaciones para interconectar todas sucursales
-                    con la sede central. <br />7.
-                    <span>C-COM de Venezuela (ISP)</span> - 1 año
-                    <br />Instalación de enlaces a través de radios canopy de
-                    Motorola para su cliente Microstar <br />8.
-                    <span> Banco Fondo Común </span> - 3 meses<br />
-                    Diseño e instalación de un enlace DPL para conectar con otro
-                    banco asociado <br />9.
-                    <span>Comsat de Venezuela (ISP)</span> - 6 meses<br />
-                    Instalación de enlaces VSAT para su cliente Miranda EAP
-                    <br />10. <span>Banco Interbank</span> - 4 años
-                    <br />Servicios de ingeniería y consultoría de los sistemas
-                    operativos VM y VSE/ESA de IBM <br />11.
-                    <span>Banco Mi Casa EAP</span> 6 meses <br />Servicios de
-                    ingeniería y consultoría del software AS/400 de IBM
-                    <br />12. <span> Venezolana EAP</span> - 7 años<br />
-                    Ingeniería y consultoría de los sistemas operativos VSE/ESA
-                    de IBM
-                  </small>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="experience experience_left">
-            <div class="experience-date">1985-1991</div>
-            <div class="experience-company">SISTEMAS DE COMPUTACIÓN ÁBACO</div>
-            <div class="experience-position">Director de System Software</div>
-            <div class="experience-description">
-              <ul class="experience_right">
-                <li>
-                  Estuve a cargo del desarrollo de las áreas de servicios y
-                  consultoría, exclusivamente para clientes con tecnologías IBM
-                  Mainframe s/370 y/o s/390.
-                </li>
-
-                <li>
-                  Durante mi gestión logré llevar el servicio al extranjero,
-                  siendo contratados por el "Banco Invercredito", de
-                  <strong>Colombia</strong> y el "Registro Nacional", de
-                  <strong>Costa Rica</strong>.
-                </li>
-
-                <li>
-                  Fuí Director de System Software de Computer Associates Inc.,
-                  de su sede en Venezuela, a través de la subsidiaria "Abaco
-                  Services & Consulting"
-
-                  <small
-                    >(Computer Associates, Inc. fue una corporación
-                    norteamericana, con presencia mundial en más de 50 paises;
-                    fabricante de software de control, gestión y sistemas para
-                    tecnologías IBM Mainframe s/370 y s/390)</small
-                  >.
-                </li>
-
-               
-                <div class="container-btn">
-                  <a
-                    href="#lista-proyectos-3"
-                    style="--clr: #1e9bff"
-                    class="btn3"
-                    ><span>view PROJECTS</span><i></i
-                  ></a>
-                </div>
-
-                <li class="lista-proyectos-3">
-                  <div class="xBox">
-                    <a href="#container-btn" class="close3">X</a>
-                  </div>
-
-                  <small><strong>Clientes - duración - proyectos</strong></small
-                  ><br /><br />
-
-                  <small>
-                    1. <span>Banco La Vivienda EAP</span> - 1 año
-                    <br />Consultoría técnica Sistema Operativo IBM VSE/ESA
-                    <br />2. <span> Latinoamericana de Seguros </span> - 6
-                    meses<br />
-                    Consultoría técnica Sistema Operativo IBM DOS/VSE.
-                    <br />3. <span>Lagoven (Petróleo de Venezuela)</span> - 3
-                    meses<br />
-                    Consultoría técnica Sistema Operativo IBM MVS <br />4.
-                    <span>Procter & Gamble de Venezuela</span> - 4 años<br />
-                    Consultoría técnica Sistema Operativo IBM VSE/ESA <br />5.
-                    <span>Interamericana de Aluminios</span> - 3 años<br />
-                    Consultoría técnica Sistema Operativo IBM VM y VSE/ESA<br />
-                    6. <span>Banco Inverbanco</span> - 1 año<br />
-                    Consultoría técnica Sistema Operativo IBM DOS/VSE <br />7.
-                    <span>Banco Caracas</span> - 2 meses<br />
-                    Resolución de problemas de red de teleprocesos VTAM/NCP
-                    Sistema Operativo IBM MVS/ESA <br />8.
-                    <span> Registro Nacional de Costa Rica </span> - 2
-                    semanas<br />
-                    Consultoría en la resolución de problemas Sistema Operativo
-                    IBM MVS/ESA y Base de Datos CA-DATACOM<br />9.
-                    <span> Ministerio de Infraestructura </span> - 8 meses<br />
-                    Consultoría en infraestructura de Windows Server <br />10.
-                    <span>Banco Principal</span> - 6 meses<br />
-                    Consultoría y desarrollo de proyecto "Capacity Planning" en
-                    un IBM AS/400
-                    <br />11. <span>Banco Fivenez </span>- 4 años<br />
-                    Consultoría técnica Sistema Operativo IBM DOS/VSE <br />12.
-                    <span>Banco Hipotecario de Venezuela</span> - 9 años<br />
-                    Consultoría técnica Sistema Operativo IBM VSE/ESA <br />13.
-                    <span>Aluminios del Caroní (Alcasa</span>) - 3 años<br />
-                    Consultoría técnica Sistema Operativo IBM VSE/ESA <br />14.
-                    <span>Banco Exterior</span> - 6 meses<br />
-                    Consultoría técnica Sistema Operativo IBM VM & MVS <br />15.
-                    <span>Empresa 1BC (RCTV)</span> - 9 meses<br />
-                    Consultoría técnica Sistema Operativo IBM DOS/VSE <br />16.
-                    <span>CANTV</span> - 2 semanas<br />
-                    Consultoría en la resolución de problemas técnica Sistema
-                    Operativo IBM MVS y Base de Datos CA-DATACOM <br />17.
-                    <span> Banco Invercredito de Colombia </span> - 1 semana<br />
-                    Consultoría de resolución de problemas Sistemas Operativos
-                    IBM VM y MVS
-                  </small>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="line"></div>
-          <div class="empty"></div>
-          <div class="empty"></div>
-          <div class="line"></div>
-
-          <div class="experience">
-            <div class="experience-date">1982-1984</div>
-            <div class="experience-company">Banco Maracaibo</div>
-            <div class="experience-position">System Programmer Senior</div>
-            <div class="experience-description">
-              <ul>
-                <li>
-                  Gerente técnico; encargado de proveer mantenimiento a la
-                  infraestructura informática del banco, compuesta por:
-                  <ul class="sublist">
-                    <li>
-                      <small
-                        >Dos Mainframe IBM tecnologías s/370-4381 y
-                        s/390-9021</small
-                      >
-                    </li>
-                    <li>
-                      <small>Sistemas Operativos IBM VM, VSE y MVS</small>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  Instalación y actualización de software de sistema,
-                  proveniente de múltiples y diferentes fabricantes.
-                </li>
-                <li>
-                  Mantenimiento e instalación de la red de telecomunicaciones
-                  SNA <small> (red de Agencias Bancarias)</small>
-                </li>
-                <li>
-                  Diseño e instalación de los proyectos de interconexión con
-                  otros bancos.
-                </li>
-                <li>
-                  Instalación y pruebas de nuevas versiones de los sistemas
-                  operativos IBM.
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="experience experience_left">
-            <div class="experience-date">1977-1981</div>
-            <div class="experience-company">Banco Nacional de Descuento</div>
-            <div class="experience-position">System Programmer</div>
-            <div class="experience-description">
-              <ul class="experience_right">
-                <li>
-                  Responsable de proveer mantenimiento a la infraestructura
-                  informática del banco, compuesta por:
-
-                  <ul class="sublist">
-                    <li><small>Dos Mainframe 4381; tecnología IBM</small></li>
-                    <li>
-                      <small>Sistemas Operativos IBM VM/SP y VSE</small>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  Instalación y actualización de software de sistema,
-                  pertenecientes a IBM y/o a otros fabricantes
-                  <small>(third parties)</small>
-                </li>
-                <li>
-                  Mantenimiento de la red telecomunicaciones SNA
-                  <small>(red de agencias bancarias)</small>
-                </li>
-                <li>
-                  Diseño SNA e instalación de enlaces físicos y lógicos DPL para
-                  la interconexión con otros bancos.
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="line"></div>
-          <div class="empty"></div>
-        </div>
-      </div>
-      <img
-        class="wave wave_bottom"
-        id="darkBottom"
-        src="./../assets/img/wave.svg"
-        alt="división"
-      />
-    </section> -->
-
-    <!-- Skills -->
-
-    <!-- <div class="horizontal-padding vertical-padding">
-      <section class="skills" id="skills">
-        <h2 class="skills-title">CONOCIMIENTOS Web</h2>
-        <ul class="skills-list">
-          <li class="skills-skill">HTML</li>
-          <li class="skills-skill">CSS</li>
-          <li class="skills-skill">JavaScript</li>
-          <li class="skills-skill">Node.js</li>
-          <li class="skills-skill">Express.js</li>
-          <li class="skills-skill">MongoDB</li>
-          <li class="skills-skill">MySQL</li>
-          <li class="skills-skill">React.js</li>
-          <li class="skills-skill">Python</li>
-          <li class="skills-skill">Java</li>
-          <li class="skills-skill">Electron.js</li>
-          <li class="skills-skill">Git</li>
-          <li class="skills-skill">Figma</li>
-          <li class="skills-skill">Progressive Web App</li>
-          <li class="skills-skill">APIs developing</li>
-        </ul>
-      </section>
-    </div> -->
-
-    <!-- Others Skills -->
-
-    <!-- <section class="otherSkills" id="otherSkills">
-      <h2 class="otherSkills-title">Otros CONOCIMIENTOS</h2>
-
-      <div class="otherSkillsGrid-container">
-        <div class="mainframe" id="mainframe">
-          <h3 class="otherSkills-subtitle">Tecnologías Mainframe IBM</h3>
-          <ul class="otherSkills-list">
-            <li class="otherSkills-skill">VSE/ESA</li>
-            <li class="otherSkills-skill">VM/ESA</li>
-            <li class="otherSkills-skill">MVS/ESA & OS/390</li>
-            <li class="otherSkills-skill">z/OS</li>
-            <li class="otherSkills-skill">CICS/VTAM/NCP</li>
-            <li class="otherSkills-skill">VSAM</li>
-            <li class="otherSkills-skill">COBOL</li>
-            <li class="otherSkills-skill">ASSEMBLER</li>
-          </ul>
-        </div>
-
-        <div class="networking" id="networking">
-          <h3 class="otherSkills-subtitle">REDES</h3>
-          <ul class="otherSkills-list">
-            <li class="otherSkills-skill">UBIQUITI</li>
-            <li class="otherSkills-skill">MICROTik</li>
-            <li class="otherSkills-skill">CANOPY</li>
-            <li class="otherSkills-skill">AIRLIVE</li>
-            <li class="otherSkills-skill">CAMBIUM</li>
-            <li class="otherSkills-skill">TRANGO</li>
-            <li class="otherSkills-skill">VIDEOCOMM</li>
-            <li class="otherSkills-skill">GRANDSTREAM</li>
-          </ul>
-        </div>
-
-        <div class="security" id="security">
-          <h3 class="otherSkills-subtitle">SISTEMAS DE SEGURIDAD</h3>
-          <ul class="otherSkills-list">
-            <li class="otherSkills-skill">ROSSLARE</li>
-            <li class="otherSkills-skill">CHIYU</li>
-            <li class="otherSkills-skill">LENEL</li>
-            <li class="otherSkills-skill">DASHOU</li>
-            <li class="otherSkills-skill">HENFOR</li>
-            <li class="otherSkills-skill">AIRLIVE</li>
-            <li class="otherSkills-skill">HIKVISION</li>
-            <li class="otherSkills-skill">DAHUA</li>
-          </ul>
-        </div>
-      </div>
     </section> -->
 
     <!-- Contact -->
@@ -936,30 +407,16 @@
       </div>
     </section>
 
-    <section>
-      <div class="pwaModal">
-        <p>
-          Si desea instalar la aplicación en tu dispositivo de manera segura
-        </p>
-        <button id="buttonAdd" class="addBoton-button" onclick="openModal()">
-          Pulse aquí
-        </button>
-      </div>
-    </section>
-
     <script src="https://use.fontawesome.com/698a367122.js"></script>
+    <script src="./assets/js/botonApp.js"></script>
     <script src="./../assets/js/botonLanguage.js"></script>
     <script src="./../assets/js/darkApp.js"></script>
     <script src="./../assets/js/mostrar_DivOculto.js"></script>
+    <script src="./assets/js/mostrar_DivOculto-profile.js"></script>
     <script src="./../lenguaje.js"></script>
-    <!--: Javascript "active the lightbox effect" routine -->
-    <script src="./../assets/js/lightbox.js"></script>
-    <!--: Scroll Reveal animation library -->
+
+    <!-- Scroll Reveal animation library -->
     <script src="./../assets/js/scrollreveal.min.js"></script>
     <script src="./../assets/js/scrollReveal.js"></script>
-
-    <!--: PWA des-Activado! -->
-    <!-- <script src="../js/pwa.js"></script>
-    <script src="../js/pwa_Homescreen.js"></script> -->
   </body>
 </html>

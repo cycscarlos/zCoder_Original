@@ -36,22 +36,17 @@
     <link rel="canonical" href="https://zCoder.netlify.app" />
 
     <!-- Meta Datos & links de PWA -->
-    <!--* Color barra del navegador en el movil (PWA) -->
+    <!-- Color barra del navegador en el movil (PWA) -->
     <meta name="theme-color" content="#9d8d6c" />
-    <!--* website optimizado para moviles  -->
+    <!-- website optimizado para moviles  -->
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
-    <!--* Requerido por Apple para iPhones y tabletas -->
+    <!-- Requerido por Apple para iPhones y tabletas -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta
       name="apple-mobile-web-app-status-bar-style"
       content="black-translucent"
     />
-    <!--: PWA des-Activado! -->
-    <link rel="apple-touch-icon" href="./assets/img/iconWeb_512.png" />
-    <link rel="apple-touch-startup-image" href="./assets/img/logoFoto.jpg" />
-    <!-- <link rel="manifest" href="./manifest.json" /> -->
-
     <link
       rel="shortcut icon"
       href="./assets/img/favicon.png"
@@ -61,13 +56,8 @@
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/navbar.css" />
-    <link rel="stylesheet" href="./assets/css/profile3.css" />
-    <link rel="stylesheet" href="./assets/css/coverLetter2.css" />
-    <link rel="stylesheet" href="./assets/css/experiences2.css" />
-    <link rel="stylesheet" href="./assets/css/skills.css" />
-    <link rel="stylesheet" href="./assets/css/otherSkills.css" />
+    <link rel="stylesheet" href="./assets/css/profile.css" /> 
     <link rel="stylesheet" href="./assets/css/contact.css" />
-    <link rel="stylesheet" href="./assets/css/pwaModal.css" />
   </head>
   <body>
     <!-- Header -->
@@ -123,18 +113,22 @@
           <h1 class="profile-title">Hi!</h1>
 
           <p class="profile-details">
-            I am a software engineer by profession, with an educational
-            background in electronic engineering. Throughout my career, I have
-            worked as a systems programmer for two banks, a software director
-            for a North American software development company, and a project
-            engineer and consultant for over forty (40) national and foreign
-            corporations
+            I am a software engineer by profession, with an academic background
+            and a degree in electronic engineering. Throughout my career, I have
+            worked as a systems programmer for two major banks, also served as a
+            software director for a North American software development company
+            with a global presence, and have had a successful career as a
+            project engineer, primarily in the areas of telecommunications and
+            electronic security system implementation. All of this has led me to
+            be hired as a consultant or expert by over forty (40) national and
+            foreign corporations
             <small
               >(including PDVSA, Cargill de Venezuela, CANTV, CVG, Metro de
               Caracas, the Registro Nacional de Costa Rica (in San José, Costa
               Rica), Banco Invercredito (in Bogotá, Colombia), as well as
               thirteen (13) banks in Venezuela)</small
-            ><span class="profile-sec-btn">
+            >
+            <span class="profile-sec-btn">
               <a
                 style="cursor: pointer"
                 onClick="mostrar_DivOculto('profile-details-sec')"
@@ -145,15 +139,16 @@
           </p>
 
           <p id="profile-details-sec" class="profile-details-sec">
-            ...In addition to my fieldwork, I am passionate about software
-            programming, which I pursue daily. I continuously train myself and
-            work in the latest technologies that make up the software ecosystem
-            <small>
-              (focusing on HTML, CSS, Python, NodeJS, Express, Javascript,
-              ReactJS...and much more tools)</small
-            >. I develop software and apps for smartphones, desktops, websites,
-            and cloud servers. My progress as web developer can be seen in the
-            following link...
+            In addition to the activities described above, I have a great
+            passion for software programming and keep myself constantly updated
+            with the latest technologies that make up the web software
+            development ecosystem
+            <small
+              >(focusing on technologies such as HTML, CSS, Python, NodeJS,
+              Express, Javascript, ReactJS, and many others)</small
+            >. I work on software development and applications for smartphones,
+            desktop computers, websites, and cloud servers on a daily basis. My
+            progress as a web developer can be seen at the following link....
             <span>
               <a
                 href="https://cycscarlos.github.io/my-portfolio"
@@ -164,7 +159,7 @@
             </span>
           </p>
 
-          <div class="btnBx">
+          <!-- <div class="btnBx">
             <a
               style="cursor: pointer"
               onClick="mostrar_DivOculto('coverLetter')"
@@ -173,13 +168,13 @@
               href="#coverLetter"
               >Cover Letter <span>(spanish)</span></a
             >
-          </div>
+          </div> -->
         </div>
       </section>
     </div>
 
     <!-- Coverletter -->
-    <section id="coverLetter" class="coverLetter mobile_coverLetter">
+    <!-- <section id="coverLetter" class="coverLetter mobile_coverLetter">
       <div class="letter-container mobile_letter-container">
         <div class="letter mobile_letter">
           <div class="imgBox">
@@ -299,7 +294,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Contact -->
 
@@ -404,27 +399,13 @@
       </div>
     </section>
 
-    <section>
-      <div class="pwaModal">
-        <p>
-          Si desea instalar la aplicación en tu dispositivo de manera segura
-        </p>
-        <button id="buttonAdd" class="addBoton-button" onclick="openModal()">
-          Pulse aquí
-        </button>
-      </div>
-    </section>
-
     <script src="https://use.fontawesome.com/698a367122.js"></script>
     <script src="./assets/js/botonApp.js"></script>
     <script src="./assets/js/botonLanguage.js"></script>
     <script src="./assets/js/darkApp.js"></script>
     <script src="./assets/js/mostrar_DivOculto.js"></script>
     <script src="./assets/js/mostrar_DivOculto-profile.js"></script>
-    <script src="./lenguaje.js"></script>
-    <!--: Javascript "active the lightbox effect" routine -->
-    <script src="./assets/js/lightbox.js"></script>
-    <!--: Scroll Reveal animation library -->
+    <script src="./lenguaje.js"></script>  
     <script src="./assets/js/scrollreveal.min.js"></script>
     <script src="./assets/js/scrollReveal.js"></script>
   </body>
