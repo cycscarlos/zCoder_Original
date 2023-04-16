@@ -16,7 +16,7 @@
 .profile-title {
   font-size: var(--step-2);
   /* margin: 1em 0 1.25em 0; Modificado el 14-Abril-2023 */
-  margin: 2em 0 0 .5em;
+  margin: 2em 0 0 0.5em;
   color: var(--logo-color);
   font-family: var(--font-profile);
   font-weight: bold;
@@ -27,8 +27,7 @@
   padding-top: 0.5em;
 }
 
-.profile-details,
-.profile-details-sec {
+.profile-details {
   font-size: 1em;
   font-weight: 300;
   line-height: 1.4;
@@ -37,6 +36,17 @@
   color: var(--text-color);
   /* padding: 0 2rem; Modificado el 14-Abril-2023 */
   padding: 0 1rem;
+}
+
+.profile-details-sec {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.4;
+  letter-spacing: normal;
+  margin: 1.3em 0;
+  color: var(--text-color);
+  padding: 0 1rem;
+  transition: 5s;
 }
 
 .profile-details-sec a {
@@ -49,6 +59,8 @@
 }
 
 .profile-details-sec {
+  /* position: relative;
+  left: -200%; */
   display: none;
 }
 
@@ -111,6 +123,27 @@
 .profile-sec-btn:hover {
   filter: brightness(130%);
 }
+
+/* Animación para el parrafo secundario */
+/* .contenedor-animacion {
+  overflow: hidden;
+  width: 400px;
+}
+
+.animar {
+  position: relative;
+  left: -200%;
+  animation: mover 1s ease-in-out 0s;
+}
+
+@keyframes mover {
+  from {
+    left: -200%;
+  }
+  to {
+    left: 0;
+  }
+} */
 
 .profile-btn-letter {
   background-color: var(--background-boton-color);

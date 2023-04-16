@@ -44,7 +44,8 @@
   --yellow-color: #f7c331;
   --text-color-inverse: white;
   --text-color: #2a2a2a;
-  --text-color-small: rgb(126, 123, 123);
+  /* --text-color-small: rgb(126, 123, 123); */
+  --text-color-small: rgb(42, 42, 42, .75);
   --navbar-shadow-color: #e5e5e5;
   --menu-mobile-background-color: #3a4460;
   --experience-color: #25537e;
@@ -90,6 +91,10 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+small {
+  color: var(--text-color-small);
 }
 
 /* Website Dark Theme colors */
