@@ -15,11 +15,12 @@
 
 .profile-title {
   font-size: var(--step-2);
-  margin: 1em 0 1.25em 0;
+  /* margin: 1em 0 1.25em 0; Modificado el 14-Abril-2023 */
+  margin: 2em 0 0 .5em;
   color: var(--logo-color);
   font-family: var(--font-profile);
   font-weight: bold;
-  text-align: left;
+  /* text-align: left; */
 }
 
 .profile-title .name {
@@ -34,7 +35,8 @@
   letter-spacing: normal;
   margin: 1.3em 0;
   color: var(--text-color);
-  padding: 0 2rem;
+  /* padding: 0 2rem; Modificado el 14-Abril-2023 */
+  padding: 0 1rem;
 }
 
 .profile-details-sec a {
@@ -98,7 +100,7 @@
   border: none;
   font-size: 0.75em;
   border-radius: 5px;
-  padding: 0.05em 1em 0.05em 0.5em; 
+  padding: 0.05em 1em 0.05em 0.5em;
   margin: 0.5em 1em;
   backdrop-filter: blur(5px);
   opacity: 0.8;

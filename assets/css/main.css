@@ -62,7 +62,7 @@
   --coverLetter-color: #2a2a2a;
   --coverLetter-bg-color: #f5f5dc;
   --logotype-color: #9d8d6c;
-  --cargo-color: #7dc5ee;
+  /* --cargo-color: #7dc5ee; */
 }
 
 html {
@@ -112,6 +112,7 @@ img {
   --letter-cite-color: #1e5372;
   --logotype-color: #9d8d6c;
   --hamburguer-color: #9d8d6c;
+  --cargo-color: #7dc5ee;
 }
 
 /* Margenes mínimos en dispositivos móviles */
