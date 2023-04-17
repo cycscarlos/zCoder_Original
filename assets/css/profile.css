@@ -1,8 +1,3 @@
-/* General styles */
-.color-cargo {
-  color: var(--cargo-color);
-  font-weight: 500;
-}
 /*: Smartphones styles */
 .profile {
   text-align: justify;
@@ -15,12 +10,10 @@
 
 .profile-title {
   font-size: var(--step-2);
-  /* margin: 1em 0 1.25em 0; Modificado el 14-Abril-2023 */
   margin: 2em 0 0 0.5em;
   color: var(--logo-color);
   font-family: var(--font-profile);
   font-weight: bold;
-  /* text-align: left; */
 }
 
 .profile-title .name {
@@ -34,7 +27,6 @@
   letter-spacing: normal;
   margin: 1.3em 0;
   color: var(--text-color);
-  /* padding: 0 2rem; Modificado el 14-Abril-2023 */
   padding: 0 1rem;
 }
 
@@ -62,46 +54,6 @@
   /* position: relative;
   left: -200%; */
   display: none;
-}
-
-.btnBx {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 3em 0 0 0;
-}
-
-.btnBx button span {
-  font-size: 0.8em;
-  font-weight: none;
-}
-
-.btnBx a {
-  min-width: 100px;
-}
-.btnBx a span {
-  font-size: 0.8em;
-  font-weight: none;
-}
-
-.profile-btn {
-  background-color: var(--background-boton-color);
-  color: var(--white-color);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  border: none;
-  font-size: 0.9em;
-  font-weight: bold;
-  padding: 0.5em 1em;
-  margin: 0 0 0 0.5em;
-  border-radius: 7px;
-  cursor: pointer;
-}
-
-.profile-btn:hover {
-  filter: brightness(130%);
 }
 
 .profile-sec-btn {
@@ -145,75 +97,6 @@
   }
 } */
 
-.profile-btn-letter {
-  background-color: var(--background-boton-color);
-  color: var(--white-color);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  border: none;
-  font-size: 0.9em;
-  font-weight: bold;
-  padding: 0.5em 1em;
-  margin: 0 2em;
-  border-radius: 7px;
-  cursor: pointer;
-}
-
-.profile-btn-letter:hover {
-  filter: brightness(130%);
-}
-
-.profile-img-section {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 14%;
-}
-
-.profile-img {
-  border-radius: 50%;
-  max-width: 7em;
-  outline: none;
-  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.5);
-}
-
-.profile-img-line {
-  background-color: var(--logotype-color);
-  height: 0.9em;
-  position: absolute;
-  /* width: 100%; */
-  width: 50%;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-}
-
-.coverLetter {
-  display: none;
-}
-
-/*: Smartphones styles */
-@media screen and (min-width: 415px) {
-  .profile-img-section {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .profile-img {
-    width: 100%;
-    max-width: 12em;
-  }
-  .profile-img-line {
-    background-color: var(--logotype-color);
-    height: 0.9em;
-    width: 210px;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-  }
-}
-
 /*: iPad portrait styles */
 @media only screen and (min-width: 768px) {
   .profile {
@@ -225,15 +108,6 @@
   .profile-details,
   .profile-details-sec {
     margin: 1.25em 0;
-  }
-  .btnBx {
-    justify-content: space-around;
-  }
-  .profile-btn {
-    margin: 0.5em 2.5em;
-  }
-  .profile-btn-letter {
-    margin: 0.5em 2em;
   }
 }
 
@@ -249,7 +123,6 @@
   }
   .profile-info {
     margin: 0 0 0 4em;
-    /* margin: 1.25em 0 0 4em; */
   }
   .profile-title {
     font-size: var(--step-2);
@@ -262,16 +135,6 @@
     margin: 1.25em 0;
     text-align: justify;
   }
-
-  .profile-img {
-    transform: scaleX(-1);
-  }
-  .profile-img-line {
-    width: 100%;
-  }
-  .btnBx {
-    display: inline;
-  }
 }
 
 /*: Desktop styles */
@@ -280,22 +143,8 @@
     justify-content: space-evenly;
   }
   .profile-title {
-    /* font-size: 2.2em; */
-    /* font-size: 2em; */
     font-size: var(--step-2);
-    /* margin: 0.6em 0; */
-    margin: 0;
-  }
-  .profile-details,
-  .profile-details-sec {
-    margin: 1.3em 0;
-    text-align: justify;
-  }
-  .btnBx {
-    margin: 0.5em 3.5em;
-  }
-
-  .profile-img {
-    transform: scaleX(-1); /* se voltea la imagen */
+    margin: 2em 0 0 0.5em;
+    text-align: left;
   }
 }
