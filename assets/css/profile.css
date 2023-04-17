@@ -220,9 +220,7 @@
     margin: 0 auto;
   }
   .profile-title {
-    /* font-size: 2.2em; */
     font-size: var(--step-2);
-    margin: 1.25em 0;
   }
   .profile-details,
   .profile-details-sec {
@@ -254,10 +252,8 @@
     /* margin: 1.25em 0 0 4em; */
   }
   .profile-title {
-    /* font-size: 2.5em; */
-    /* font-size: 2em; */
     font-size: var(--step-2);
-    margin: 0.6em 0;
+    margin: 6em 0 0 0.5em;
   }
   .profile-details,
   .profile-details-sec {
