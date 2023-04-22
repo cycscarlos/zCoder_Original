@@ -60,7 +60,7 @@
   --letter-cite-color: #1e5372;
   --coverLetter-color: #2a2a2a;
   --coverLetter-bg-color: #f5f5dc;
-  --logotype-color: #9d8d6c;
+  --logotype-color: rgb(157, 141, 108);
 }
 
 html {
